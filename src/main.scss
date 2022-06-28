@@ -1,0 +1,100 @@
+// Variables
+//colors
+$light-bege: #fffaf2;
+$bege: #f5d6ab;
+$light-brown: #c66c49;
+$brown: #8b4136;
+$dark-brown: #333333;
+
+//breakpoints
+$small: 650px;
+$medium: 850px;
+$large: 1280px;
+$xlarge: 1440px;
+
+// Global styles
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: Libre Franklin, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  color: $dark-brown;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $xlarge) {
+    width: 1440px;
+  }
+}
+
+// Imports
+//vendors
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("./assets/fonts/LibreFranklin-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("./assets/fonts/LibreFranklin-Light.ttf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("./assets/fonts/LibreFranklin-Thin.ttf") format("opentype");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("./assets/fonts/LibreFranklin-Regular.ttf") format("opentype");
+  font-weight: 500;
+}
+
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+@import "./assets/css/vendors.scss";
+
+//partials
+@import "./assets/css/hero.scss";
+@import "./assets/css/about.scss";
+@import "./assets/css/skills.scss";
+@import "./assets/css/portfolio.scss";
+@import "./assets/css/footer.scss";
