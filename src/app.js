@@ -44,9 +44,9 @@ const lang = {
     headerLink: "Latest works",
     aboutHeader: "About me",
     aboutText1:
-      "I making sites and web apps. I have 1+ years of experience in web dev. Just started this portfolio site, more projects will be added soon.",
+      "I make websites and web apps on top of modern web frameworks or with native JS. I have 5+ years of experience in web dev.",
     aboutText2:
-      "If you want a site or an app you can contact me with buttons below this page.",
+      "If you need a site or an app you can contact me with buttons below.",
     skillsHeader: "Skills",
     portfolioHeader: "Projects",
     webSitesHeader: "Web sites",
